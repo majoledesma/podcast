@@ -1,0 +1,384 @@
+@media screen and (max-width:767px) {
+body{
+   overflow-x: hidden;
+}
+ * {
+      margin: 0;
+      padding: 0;
+      border: none;
+   }
+
+.header {
+   display: block;
+    width: 100vw;
+    padding-top: 10px;
+    height: auto;
+    }
+
+ .header-logo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    width: 100%;
+ }   
+
+ /* #menu-btn{
+    display: block;
+    margin-right: 16px;
+    font-size: 23px;
+ } */
+
+.header-logo img {
+   height: 24px;
+   width: 24px;
+   margin-left: 16px;
+}  
+
+input {
+   display: none;
+}
+
+ label {
+   position: fixed;
+   top: 10px;
+   right: 16px;
+   height: 20px;
+   width: 20px;
+   z-index: 5;
+}
+
+input + label span {
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   top: 50%;
+   margin-top: -1px;
+   left: 0;
+   display: block;
+   background: #020304;
+   transition: 0.5s;
+}
+input + label span:first-child {
+   top: 3px;
+}
+body input + label span:last-child {
+   top: 16px;
+}
+
+label:hover {
+   cursor: pointer;
+}
+
+input:checked + label span {
+   opacity: 0;
+   top: 50%;
+}
+input:checked + label span:first-child {
+   opacity: 1;
+   transform: rotate(405deg);
+}
+input:checked + label span:last-child {
+   opacity: 1;
+   transform: rotate(-405deg) translate(4.5px, -4.5px);
+   
+}
+
+input ~ nav {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100px;
+   z-index: 3;
+   transition: 0.5s;
+   transition-delay: 0.5s;
+}
+body input ~ nav > ol {
+   position: absolute;
+   top: -200px;
+   transition: 0.5s;
+   transition-delay: 0s;
+}
+body input ~ nav > ol > li {
+   transition: 0.2;
+   transition-delay: 0s;
+}
+body input ~ nav > ol > li > a {
+   display: block;
+   opacity: 0;
+}
+body input:checked ~ nav {
+   height: 100%;
+   transition-delay: 0s;
+}
+body input:checked ~ nav > ol{
+   top: 45px;
+}
+body input:checked ~ nav > ol > li > a{
+   opacity: 1;
+   transition-delay: 0.2s;
+}
+ 
+.header-menu{
+   display: block;
+   background:#0000EC;
+   width: 100%;
+   padding-top: 20px;
+}
+
+/* .header-menu.is-active{
+   display: block;
+}
+
+
+.burger.is-active{
+   display: none;
+} */
+
+#topics{
+   padding-bottom: 10px ;
+}
+.link {  
+   height: 40px;
+   display: block;
+   color: white;
+   padding: 0 16px;
+}
+
+.button {
+   background-color: #00F3BB;
+   width: 288px;
+   height: 48px;
+   font-family: "IBM Plex Mono", monospace;
+   font-size: 18px;
+   color: #060A24;
+   letter-spacing: 0;
+   text-align: center;
+}
+
+.hello {
+   height: 279px;
+   width: 100vw;
+   margin: 0px;
+   text-align: center;
+   margin-top: 80px;
+}
+
+.hello h1 {
+   font-family: 'IBM Plex Sans', sans-serif;
+   font-size: 36px;
+   color: #060A24;
+   letter-spacing: 0;
+   line-height: 42px;
+   margin: 39px 16px 16px 16px;
+   text-align: start;
+   z-index: -999;
+   width: 60vw;
+}
+
+.hello button {
+   margin-top: 36px;
+}
+
+.tachado {
+    text-decoration: line-through;
+}
+
+.hello p{
+   font-family: "IBM Plex Mono", monospace;
+   font-size: 14px;
+   color: #060A24;
+   letter-spacing: 0;
+   line-height: 22px;
+   margin: 0px 16px 0px 16px;
+   text-align: justify;
+}
+
+
+.episodes-background {
+   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+   transform: skewY(-6deg);
+   width: 100%;
+   height: 1250.5px;
+   transform-origin: top left;
+   position: absolute;
+ }
+
+ .episodes h2{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 48px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-weight: 400;
+    margin: 64px 147px 21px 16px;
+    padding-top: 50px;
+    position: relative;
+ }
+
+.container-iframes iframe {
+   margin-bottom:0px;
+   height: 235px;
+   width: 100%;
+   border: 0px;  
+   background-color: transparent
+ }
+
+
+.from {
+   display: block;
+}
+
+.from figure {
+   text-align: center;
+}
+
+.from-img {
+   width: 360px;
+   height: 519px;
+   margin-top: 40px;
+   margin-right: 0px;
+}
+
+.from-description h2{
+   font-family: "IBM Plex Sans", sans-serif;
+   font-size: 36px;
+   color: #060A24;
+   letter-spacing: 0;
+   line-height: 42px;
+   height: 84px;  
+   margin: 27px 16px 8px 16px;
+}
+
+.from-description p {
+   height: 254px;
+   width: auto;
+   font-size: 14px;
+   color: #060A24;
+   letter-spacing: 0;
+   line-height: 22px;
+   margin: 8px 16px 54px 16px;
+}
+
+.guests h2 {
+   font-family: "IBM Plex Sans", sans-serif;
+   font-size: 36px;
+   color: #060A24;
+   letter-spacing: 0;
+   line-height: 42px;
+   height: 84px;  
+   margin: 27px 16px 8px 16px;
+   } 
+   
+   
+.guests-images  {
+   display: block;
+   width: 100%
+   }
+   
+.guests-img{
+   width: 100%;
+   height: auto;
+   margin-top: -5px;
+    }
+    
+   
+   
+.topics h2 {
+   font-family: "IBM Plex Sans", sans-serif;
+   font-size: 36px;
+   color: #060A24;
+   letter-spacing: 0;
+   line-height: 42px;
+   height: 84px;  
+   margin: 27px 16px 24px 16px;
+    }
+   
+.topic {
+       font-family: 'IBM Plex Sans', sans-serif;
+       font-weight: 600;
+       font-size: 24px;
+       color: #060A24;
+       letter-spacing: 0;
+       width: auto;   
+    }
+   
+    .topic img {
+      justify-content: center;
+    }
+   
+    .topic p {
+       margin-top: 20px;
+       margin-bottom: 60px;
+       width: auto;
+       text-align: center;
+    }
+   
+    .topics-container {
+     display: block;
+     margin-bottom: 100px;
+     justify-content: center;
+     text-align: center;
+    }
+
+.novedades h2 {
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 36px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 42px;
+      font-weight: normal;
+      position: relative;
+      width: 100%;
+      margin-top: 100px;
+   }    
+
+
+   .footer {
+      position: absolute;
+      margin-top: 150px;
+      height: 80px;
+      width: 100vw;
+   }
+   .footer p {
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: normal;
+      font-size: 16px;
+      color: #060A24;
+      letter-spacing: 0;
+      line-height: 28px;  
+      height: 22px;
+      width: auto;
+      margin-top: 25px;
+      margin-bottom: 20px;
+   }
+  
+   .container-social {
+      display: block;
+      text-align: center;
+      margin: 0px;  
+   }
+   
+   #spotify {
+      margin-right: 30px;
+      width: 18px;
+   }
+  
+   #instagram {
+     margin-right: 30px;
+   }
+  
+   #twitter {
+     margin-right: 30px;
+   }
+  
+   #facebook {
+     margin-right: 30px;
+   }
+  
+   #telegram {
+      margin-right: 0px;
+   }
+
+
+}

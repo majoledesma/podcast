@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500%7CIBM+Plex+Sans:400,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4465e0dafc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Podcast</title>
+</head>
+<body>
+<header class="header fadeInDown">
+    <figure class="header-logo">
+    <img src="images/logo.svg" alt="Logo">
+    </figure>
+    <input id="burger" type="checkbox" />
+    <label for="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+    <nav id="menu"> 
+         <ol class="header-menu fadeInDownMenu">   
+            <li>
+                <a class="link" href="#episodes">EPISODIOS</a>
+            </li>
+            <li>
+                <a class ="link" href="#nosotros">NOSOTROS</a>
+            </li>
+            <li>
+                <a class="link" href="#entrevistas">ENTREVISTAS</a>
+            </li>
+            <li>
+                <a class="link" href="#topicos" id="topics">TÓPICOS</a>
+            </li>
+         </ol> 
+    </nav>
+</header>
+<section class="hello">
+    <h1 class="fadeIn">Hello <span class="tachado">world</span> pale blue dot<span class="color">.</span></h1>
+    <p>El portal de podcasts que explora el mundo de la programación y <br> la tecnología. Nuevos episodios, todos los jueves cada 15 días. </p>
+    <button class="button">CONOCÉ MÁS</button>
+</section>
+<section class="episodes" id="episodes">
+    <div class="episodes-background"></div>
+    <h2>Episodios</h2>
+    <div class="container-iframes">
+            <iframe class="iframe" src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"  allow="encrypted-media"></iframe> 
+            <iframe class="iframe" src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" allow="encrypted-media"></iframe>
+            <iframe class="iframe" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" allow="encrypted-media"></iframe>
+            <iframe class="iframe" src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" allow="encrypted-media"></iframe>
+    </div>
+</section>    
+<section class="from" id="nosotros">
+    <figure>
+        <img class="from-img" src="images/phone.png" alt="Phone">
+    </figure>
+    <div class="from-description"> 
+      <h2>De dónde venimos</h2>  
+      <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. <br>
+         <br> Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+    </div>
+</section>
+<section class="guests" id="entrevistas">
+    <h2>Invitadas/os estelares</h2>
+<div class="guests-images">
+    <figure><a href="https://es.wikipedia.org/wiki/Grace_Murray_Hopper" target="_blank"><img class="guests-img" src="images/grace-hopper.png" alt="Grace Hopper"></a></figure>
+    <figure><a href="https://es.wikipedia.org/wiki/Katie_Bouman" target="_blank"><img class="guests-img" src="images/Katie-Bouman.png" alt="Katie Bouman"></a></figure>
+    <figure><a href="https://es.wikipedia.org/wiki/Margaret_Hamilton_(cient%C3%ADfica)" target="_blank"><img class="guests-img" src="images/Margaret_Hamilton.png" alt="Margaret Hamilton"></a></figure>
+    <figure><a href="https://es.wikipedia.org/wiki/UNIVAC_I" target="_blank"><img class="guests-img" src="images/univac.png" alt="Univac"></a></figure>
+    <figure><a href="https://es.wikipedia.org/wiki/ENIAC" target="_blank"><img class="guests-img" src="images/Computer.png" alt="Eniac"></a></figure>
+    <figure><a href="https://en.wikipedia.org/wiki/Susan_Kare" target="_blank"><img class="guests-img" src="images/susan-kare.png" alt="Susan Kare"></a></figure>
+</div>
+</section>
+<section class="topics" id="topicos"> 
+   <h2>Algunos de nuestros temas</h2> 
+   <div class="topics-container">
+       <div class="topic">
+           <img src="images/icon1.svg" alt="Trabajo Remoto">
+           <p>Trabajo remoto</p>
+       </div>
+       <div class="topic">
+            <img src="images/icon2.svg" alt="Programación">
+            <p>Repensando la programación</p>
+        </div>
+        <div class="topic">
+                <img src="images/icon3.svg" alt="Código">
+                <p>Bases del código</p>
+        </div>
+        <div class="topic">
+                <img src="images/icon4.svg" alt="Seguridad">
+                <p>Seguridad informatica</p>
+        </div>
+   </div>
+</section>
+<section class="novedades">
+    <div class="novedades-background1"></div>
+    <div class="novedades-background"></div>
+    <h2>¿Querés las últimas novedades?</h2>
+    <button class="button">ESCUCHÁ LOS EPISODIOS</button>
+</section>
+<footer class="footer">
+    <div class="container-social">
+      <p>© 2019-Hello blue pale dot🥶</p>
+        <div class="fotter-social">
+       <a href="https://www.spotify.com/ar/" target="_blank"><i class="fab fa-spotify" id="spotify"></i></a>
+       <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" id="instagram"></i></a>
+       <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter" id="twitter"></i></a>
+       <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook" id="facebook"></i></a>
+       <a href="https://web.telegram.org/" target="_blank"><i class="fab fa-telegram" id="telegram"></i></a>
+     </div>   
+    </div>
+</footer>
+<!-- <script>
+    const menu = document.querySelector('.header-menu');
+    const burgerBtn = document.querySelector('.burger'); 
+    burgerBtn.addEventListener('click', hideShow)
+
+    function hideShow() {
+      if (menu.classList.contains('is-active')){
+        menu.classList.remove('is-active');
+        burgerBtn.classList.add('fa-bars');
+        burgerBtn.classList.remove('fa-times');
+        
+      }  else {
+        menu.classList.add('is-active');
+        burgerBtn.classList.add('fa-times');
+        burgerBtn.classList.remove('fa-bars');
+      }
+
+      }
+       
+    </script> -->
+</body>
+</html>
